@@ -1,0 +1,43 @@
+# .gitignore for Grails 1.2 and 1.3
+
+# web application files
+/web-app/WEB-INF/classes
+
+# default HSQL database files for production mode
+/prodDb.*
+
+# general HSQL database files
+*Db.properties
+*Db.script
+
+# logs
+/stacktrace.log
+/test/reports
+/logs
+**/*.log
+cookies.txt
+
+# project release file
+/*.war
+
+# plugin release files
+/*.zip
+/plugin.xml
+
+# older plugin install locations
+/plugins
+/web-app/plugins
+
+# "temporary" build files
+/target
+/target-eclipse
+/build
+/.gradle
+/.settings
+
+# preview pane integration
+/web-app/mfp-client
+
+# build artifacts that get copied into the src tree
+**/*.tgz
+.project
